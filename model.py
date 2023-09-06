@@ -18,7 +18,7 @@ import pickle
 
 
 def get_recommendations(user_input):
-    url = 'https://github.com/Bindugk4/Capstone_Project/blob/main/sample30.csv'
+    url = 'https://raw.githubusercontent.com/Bindugk4/Capstone_Project/main/sample30.csv'
     reviews_df = pd.read_csv(url)
 
     reviews_df['user_sentiment_bool'] = reviews_df['user_sentiment'].apply(lambda x: 0 if x == "Negative" else 1)
